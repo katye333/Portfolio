@@ -8,8 +8,11 @@ export default () => (
             position: "absolute",
             top: 0,
             left: 0,
+            right: 0,
+            bottom: 0,
             width: "100%",
-            height: "100%"
+            height: "100%",
+            backgroundSize: 'cover'
         }}>
 
         <Particles
@@ -29,7 +32,7 @@ export default () => (
                         type: "circle",
                         stroke: {
                             width: 0,
-                            color: "#000000"
+                            color: "#ffffff"
                         },
                         polygon: {
                             nb_sides: 5
@@ -104,7 +107,7 @@ export default () => (
                         },
                         bubble: {
                             distance: 400,
-                            size: 10,
+                            size: 5,
                             duration: 1,
                             opacity: 2,
                             speed: 3

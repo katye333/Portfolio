@@ -1,17 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Person, Apps, Email, GitHub, LinkedIn } from '@material-ui/icons';
+import { Person, Apps, Email, GitHub, LinkedIn, PhoneAndroid, ImportantDevices } from '@material-ui/icons';
 import { Card } from '@material-ui/core';
 import ParticleComponent from './ParticleComponent';
 
 function App() {
-    // particlesJS.load('particles-js', 'particles.json');
-
     return (
-        <div className="App" style={{ display: 'flex', flex: 1, flexDirection: 'column', alignItems: 'center', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+        <div className="App" style={{ display: 'flex', flex: 1, flexDirection: 'column', alignItems: 'center', position: 'absolute', top: 0, left: 0 }}>
             <ParticleComponent />
-            <Card style={{ padding: 50, zIndex: 1 }}>
+            <Card style={{ padding: 50, zIndex: 1, marginBottom: 200 }}>
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                     <img alt="Kaitlin Stevens" src={process.env.PUBLIC_URL + '/me.jpg'} width={390} height={402} />
 
@@ -78,6 +76,56 @@ function App() {
                         <div style={{ width: 650, height: 5, borderColor: '#000000', backgroundColor: '#000000', marginTop: 55}}></div>
                     </div>
 
+                    <div style={{ display: 'flex', flexDirection: 'row', flex: 1 }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15, flex: 0.5 }}>
+                            <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                <div style={{ padding: 15, borderRadius: 40, backgroundColor: '#55C1E7' }}>
+                                    <PhoneAndroid style={{ fontSize: 40, color: '#ffffff' }} /> 
+                                </div>
+                                <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15  }}>
+                                    <h4 style={{ margin: 0, fontSize: 20, color: '#55C1E7', fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>MOBILE APP DEVELOPER</h4>
+                                    <p style={{ marginTop: 5, fontSize: 16, fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>College Hunks Hauling Junk</p>
+                                    <h4 style={{ fontSize: 15, margin: 0, marginTop: -10 }}>2018 - 2020</h4>
+                                </div>
+                            </div>
+
+                            <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                <ul style={{ width: 325 }}>
+                                    <li>Developed a React Native application for use on the respective app stores</li>
+                                    <li>Integrated technologies such as Firebase for notifications and analytics, Square Reader for credit card
+                                        processing, and PSPDFKit for generating, annotating and signing PDFs</li>
+                                    <li>Responsible for app deployments via the store front and using AppCenter’s code push tool</li>
+                                    <li>Configured Jest with Enzyme to facilitate testing throughout the development process</li>
+                                    <li>Followed the Material UI guidelines set by Google to create a truly beautiful app</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div style={{ width: 1, height: 400, borderColor: '#cccccc', backgroundColor: '#cccccc' }} />
+
+                        <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15, flex: 0.5 }}>
+                            <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                <div style={{ padding: 15, borderRadius: 40, backgroundColor: '#55C1E7' }}>
+                                    <ImportantDevices style={{ fontSize: 40, color: '#ffffff' }} /> 
+                                </div>
+                                <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15  }}>
+                                    <h4 style={{ margin: 0, fontSize: 20, color: '#55C1E7', fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>FULL STACK DEVELOPER</h4>
+                                    <p style={{ marginTop: 5, fontSize: 16, fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>mJobTime Corporation</p>
+                                    <h4 style={{ fontSize: 15, margin: 0, marginTop: -10 }}>2013 - 2017</h4>
+                                </div>
+                            </div>
+
+                            <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                <ul style={{ width: 325 }}>
+                                    <li>Developed an web application using AppCache and Service Workers in conjunction with C# to facilitate offline capabilities</li>
+                                    <li>Solely responsible for changes to the application interface using Bootstrap, Flexbox and custom CSS</li>
+                                    <li>Created stored procedures using Sybase and MSSQL</li>
+                                    <li>Configured Jest with Enzyme to facilitate testing throughout the development process</li>
+                                    <li>Implemented GPS Geotracking using a REST web api to let businesses monitor employee and equipment movement on the job site.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Card>
 
