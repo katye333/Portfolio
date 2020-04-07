@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Person, Apps, Email, GitHub, LinkedIn, PhoneAndroid, ImportantDevices } from '@material-ui/icons';
+import { Person, Apps, Email, GitHub, LinkedIn, PhoneAndroid, ImportantDevices, School, Android, DeveloperMode } from '@material-ui/icons';
 import { Card } from '@material-ui/core';
 import ParticleComponent from './ParticleComponent';
 import PieChart from 'react-minimal-pie-chart';
@@ -12,7 +12,7 @@ function App() {
         <div className="App" style={{ display: 'flex', flex: 1, flexDirection: 'column', alignItems: 'center', position: 'absolute', top: 0, left: 0 }}>
             <ParticleComponent />
             <Card style={{ padding: 50, zIndex: 1, marginBottom: 200 }}>
-                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                     <img alt="Kaitlin Stevens" src={process.env.PUBLIC_URL + '/me.jpg'} width={390} height={402} />
 
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -70,16 +70,16 @@ function App() {
                     </div>    
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <div style={{ display: 'flex', flexDirection: 'row', marginLeft: 15 }}>
-                        <div style={{ marginRight: 10, fontSize: 36, fontWeight: '900', fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>
+                        <div style={{ fontSize: 36, fontWeight: '900', fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>
                             <p>EMPLOYMENT</p>
                         </div>
                         <div style={{ width: 650, height: 5, borderColor: '#000000', backgroundColor: '#000000', marginTop: 55}}></div>
                     </div>
 
                     <div style={{ display: 'flex', flexDirection: 'row', flex: 1 }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15, flex: 0.5 }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', marginRight: 50, flex: 0.5 }}>
                             <div style={{ display: 'flex', flexDirection: 'row' }}>
                                 <div style={{ padding: 15, borderRadius: 40, backgroundColor: '#55C1E7' }}>
                                     <PhoneAndroid style={{ fontSize: 40, color: '#ffffff' }} /> 
@@ -221,6 +221,100 @@ function App() {
                                         100
                                     ]}
                                 />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style={{ display: 'flex', flexDirection: 'row', marginLeft: 15 }}>
+                        <div style={{ fontSize: 36, fontWeight: '900', fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>
+                            <p>EDUCATION & SKILLS</p>
+                        </div>
+                        <div style={{ width: 505, height: 5, borderColor: '#000000', backgroundColor: '#000000', marginTop: 55}}></div>
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', flex: 0.5 }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15, flex: 0.5 }}>
+                                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                    <div style={{ padding: 15, borderRadius: 40, backgroundColor: '#FF9824' }}>
+                                        <Android style={{ fontSize: 40, color: '#ffffff' }} /> 
+                                    </div>
+                                    <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15  }}>
+                                        <h4 style={{ margin: 0, fontSize: 20, color: '#FF9824', fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>ADVANCED ANDROID NANODEGREE</h4>
+                                        <p style={{ marginTop: 5, fontSize: 16, fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>Udacity</p>
+                                        <h4 style={{ fontSize: 15, margin: 0, marginTop: -10 }}>Currently Enrolled</h4>
+                                    </div>
+                                </div>
+                                <div style={{ marginTop: 25, marginBottom: 15, width: 485, height: 1, borderColor: '#cccccc', backgroundColor: '#cccccc' }} />
+
+                                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                    <div style={{ padding: 15, borderRadius: 40, backgroundColor: '#FF9824' }}>
+                                        <Android style={{ fontSize: 40, color: '#ffffff' }} /> 
+                                    </div>
+                                    <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15  }}>
+                                        <h4 style={{ margin: 0, fontSize: 20, color: '#FF9824', fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>ANDROID BASICS NANODEGREE</h4>
+                                        <p style={{ marginTop: 5, fontSize: 16, fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>Udacity</p>
+                                        <h4 style={{ fontSize: 15, margin: 0, marginTop: -10 }}>2019</h4>
+                                    </div>
+                                </div>
+                                <div style={{ marginTop: 25, marginBottom: 15, width: 485, height: 1, borderColor: '#cccccc', backgroundColor: '#cccccc' }} />
+
+                                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                    <div style={{ padding: 15, borderRadius: 40, backgroundColor: '#FF9824' }}>
+                                        <DeveloperMode style={{ fontSize: 40, color: '#ffffff' }} /> 
+                                    </div>
+                                    <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15  }}>
+                                        <h4 style={{ margin: 0, fontSize: 20, color: '#FF9824', fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>REACT NANODEGREE</h4>
+                                        <p style={{ marginTop: 5, fontSize: 16, fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>Udacity</p>
+                                        <h4 style={{ fontSize: 15, margin: 0, marginTop: -10 }}>2017</h4>
+                                    </div>
+                                </div>
+                                <div style={{ marginTop: 25, marginBottom: 15, width: 485, height: 1, borderColor: '#cccccc', backgroundColor: '#cccccc' }} />
+
+                                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                    <div style={{ padding: 15, borderRadius: 40, backgroundColor: '#FF9824' }}>
+                                        <School style={{ fontSize: 40, color: '#ffffff' }} /> 
+                                    </div>
+                                    <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 15  }}>
+                                        <h4 style={{ margin: 0, fontSize: 20, color: '#FF9824', fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>COMPUTER SCIENCE</h4>
+                                        <p style={{ marginTop: 5, fontSize: 16, fontFamily: 'Helvetica, Helvetica Neue, Arial, sans-serif' }}>Lamar University</p>
+                                        <h4 style={{ fontSize: 15, margin: 0, marginTop: -10 }}>2012 - 2017</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style={{ display: 'flex', flexDirection: 'column', flex: 0.5, marginLeft: 10}}>
+                            <div style={{ marginBottom: 5, width: 350, backgroundColor: '#43A19E', flexDirection: 'row', display: 'flex', justifyContent: 'space-between' }}>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginLeft: 10 }}>JavaScript</p>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginRight: 10 }}>7 years</p>  
+                            </div>
+                            <div style={{ marginBottom: 5, width: 250, backgroundColor: '#7B43A1', flexDirection: 'row', display: 'flex', justifyContent: 'space-between' }}>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginLeft: 10 }}>ReactJS</p>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginRight: 10 }}>3 years</p>  
+                            </div>
+                            <div style={{ marginBottom: 5, width: 250, backgroundColor: '#F2317A', flexDirection: 'row', display: 'flex', justifyContent: 'space-between' }}>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginLeft: 10 }}>React Native</p>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginRight: 10 }}>3 years</p>  
+                            </div>
+                            <div style={{ marginBottom: 5, width: 350, backgroundColor: '#FF9824', flexDirection: 'row', display: 'flex', justifyContent: 'space-between' }}>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginLeft: 10 }}>HTML5</p>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginRight: 10 }}>7 years</p>  
+                            </div>
+                            <div style={{ marginBottom: 5, width: 350, backgroundColor: '#58CF6C', flexDirection: 'row', display: 'flex', justifyContent: 'space-between' }}>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginLeft: 10 }}>CSS</p>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginRight: 10 }}>7 years</p>  
+                            </div>
+                            <div style={{ marginBottom: 5, width: 300, backgroundColor: '#43A19E', flexDirection: 'row', display: 'flex', justifyContent: 'space-between' }}>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginLeft: 10 }}>.NET/C#</p>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginRight: 10 }}>4 years</p>  
+                            </div>
+                            <div style={{ marginBottom: 5, width: 175, backgroundColor: '#7B43A1', flexDirection: 'row', display: 'flex', justifyContent: 'space-between' }}>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginLeft: 10 }}>Android</p>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginRight: 10 }}>2 years</p>  
+                            </div>
+                            <div style={{ marginBottom: 5, width: 175, backgroundColor: '#F2317A', flexDirection: 'row', display: 'flex', justifyContent: 'space-between' }}>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginLeft: 10 }}>iOS</p>
+                                <p style={{ fontSize: 16, color: 'white', padding: 5, marginRight: 10 }}>2 years</p>  
                             </div>
                         </div>
                     </div>
