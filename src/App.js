@@ -64,12 +64,14 @@ export class App extends React.Component {
                                 <a 
                                     href="https://github.com/katye333"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     style={{ width: 100, height: 100, backgroundColor: '#24292e', borderStyle: 'none', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                                     <GitHub style={{ fontSize: 40, color: '#ffffff' }} />
                                 </a>
                                 <a 
                                     href="https://www.linkedin.com/in/kaitlin-stevens-webdev/"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     style={{ width: 100, height: 100, backgroundColor: '#0077b5', borderStyle: 'none', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                                     <LinkedIn style={{ fontSize: 40, color: '#ffffff' }} />
                                 </a>
